@@ -1,0 +1,36 @@
+/*Default styles*/
+
+.container{padding:20px;width:100%}
+.related-products li {
+	float:left;
+	width:50%;
+}
+#mobile-header {
+	display: block;
+}
+#nav{
+	display:none;
+}
+
+
+
+/*Display 3 per row for medium displays (like mobile phones in landscape or smaller tablets)*/
+@media screen and (min-width: 800px) {
+	#nav{
+		display:block !important;
+	}
+	.related-products li {
+		width:33.3333333%;
+	}
+	#mobile-header {
+		display: none;
+	}
+}
+
+/*Display 6 to a row for large displays (like medium tablets and up) */
+@media screen and (min-width: 1000px) {
+	.container{margin:0 auto;width:1000px;}
+	.related-products li {
+		width:16.6666667%;
+	}
+}
